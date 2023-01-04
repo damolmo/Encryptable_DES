@@ -197,7 +197,7 @@ class CifrarState extends State<Cifrar>{
                         chooseFile(index);
                       }
 
-                      else if (index == 1 && pasosState[index] == false){
+                      else if (index == 1 && pasosState[index] == false && pasosState[0] == true){
                         exportEncryptedFileDialog(context, index);
                       }
 

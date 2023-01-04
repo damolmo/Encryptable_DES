@@ -179,6 +179,8 @@ class DescifrarState extends State<Descifrar>{
           // Banner
           Image.asset("assets/icon/banner_desencriptar.png"),
 
+          SizedBox(height: 50,),
+
           // Title
           Text("Pasos a seguir", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 35),),
 
@@ -195,7 +197,7 @@ class DescifrarState extends State<Descifrar>{
                             chooseFile(index);
                           }
 
-                          else if (index == 1 && pasosState[index] == false){
+                          else if (index == 1 && pasosState[index] == false && pasosState[0] == true){
                             exportEncryptedFileDialog(context, index);
                           }
 
